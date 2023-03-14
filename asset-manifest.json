@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/goit-react-lesson-06-redux-todo-new-redux/static/css/main.5763847e.css",
+    "main.js": "/goit-react-lesson-06-redux-todo-new-redux/static/js/main.e5748bbe.js",
+    "index.html": "/goit-react-lesson-06-redux-todo-new-redux/index.html",
+    "main.5763847e.css.map": "/goit-react-lesson-06-redux-todo-new-redux/static/css/main.5763847e.css.map",
+    "main.e5748bbe.js.map": "/goit-react-lesson-06-redux-todo-new-redux/static/js/main.e5748bbe.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5763847e.css",
+    "static/js/main.e5748bbe.js"
+  ]
+}
