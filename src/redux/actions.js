@@ -1,54 +1,50 @@
 import { nanoid } from 'nanoid';
+import { createAction } from '@reduxjs/toolkit';
 
-export const addTask = text => {
+export const addTask = createAction('tasks/addTask', text => {
   return {
-    type: 'tasks/addTask',
     payload: {
       id: nanoid(),
       text,
       completed: false,
     },
   };
-};
+});
 
-export const deleteTask = taskId => {
-  return {
-    type: 'tasks/deleteTask',
-    payload: taskId,
-  };
-};
+export const deleteTask = createAction('tasks/deleteTask');
 
-export const toggleCompleted = taskId => {
-  return {
-    type: 'tasks/toggleCompleted',
-    payload: taskId,
-  };
-};
+export const toggleCompleted = createAction('tasks/toggleCompleted');
 
-export const setStatusFilter = status => {
-  return {
-    type: 'filter/setStatusFilter',
-    payload: status,
-  };
-};
+export const setStatusFilter = createAction('filter/setStatusFilter');
 
-// const addTask = {
-//   type: 'tasks/addTask',
-//   payload: {
-//     id: 'Generated id',
-//     text: 'User entered text',
-//     completed: false,
-//   },
+// export const addTask = text => {
+//   return {
+//     type: 'tasks/addTask',
+//     payload: {
+//       id: nanoid(),
+//       text,
+//       completed: false,
+//     },
+//   };
 // };
-// const deleteTask = {
-//   type: 'tasks/deleteTask',
-//   payload: 'Task id',
+
+// export const deleteTask = taskId => {
+//   return {
+//     type: 'tasks/deleteTask',
+//     payload: taskId,
+//   };
 // };
-// const toggleCompleted = {
-//   type: 'tasks/toggleCompleted',
-//   payload: 'Task id',
+
+// export const toggleCompleted = taskId => {
+//   return {
+//     type: 'tasks/toggleCompleted',
+//     payload: taskId,
+//   };
 // };
-// const setStatusFilter = {
-//   type: 'filters/setStatusFilter',
-//   payload: 'Filter value',
+
+// export const setStatusFilter = status => {
+//   return {
+//     type: 'filter/setStatusFilter',
+//     payload: status,
+//   };
 // };
