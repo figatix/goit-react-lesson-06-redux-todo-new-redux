@@ -1,21 +1,26 @@
-import { nanoid } from 'nanoid';
-import { createAction } from '@reduxjs/toolkit';
+// import { nanoid } from 'nanoid';
 
-export const addTask = createAction('tasks/addTask', text => {
-  return {
-    payload: {
-      id: nanoid(),
-      text,
-      completed: false,
-    },
-  };
-});
+// ****** Before Slice
 
-export const deleteTask = createAction('tasks/deleteTask');
+// import { createAction, nanoid } from '@reduxjs/toolkit';
 
-export const toggleCompleted = createAction('tasks/toggleCompleted');
+// export const addTask = createAction('tasks/addTask', text => {
+//   return {
+//     payload: {
+//       id: nanoid(),
+//       text,
+//       completed: false,
+//     },
+//   };
+// });
 
-export const setStatusFilter = createAction('filter/setStatusFilter');
+// export const deleteTask = createAction('tasks/deleteTask');
+
+// export const toggleCompleted = createAction('tasks/toggleCompleted');
+
+// export const setStatusFilter = createAction('filter/setStatusFilter');
+
+// ****** /Before Slice
 
 // export const addTask = text => {
 //   return {
